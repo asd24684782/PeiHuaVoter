@@ -21,4 +21,4 @@ votes放要投票的頁面
 email下可以放多組帳號密碼 `帳號:密碼`
 
 ## 啟動
-執行`main.exe`
+執行`exe/main.exe`
