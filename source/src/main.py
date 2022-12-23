@@ -4,16 +4,16 @@ from model.Voter import Voter
 from model.SettingManager import SettingManager
 
 
-if __name__ == '__main__':
+def main():
     SettingManager('./setting/setting.yml')
     settingMgr = SettingManager.getInstance()
     loginURL = settingMgr.setting['url']['login']
     voteURLs = settingMgr.setting['url']['votes']
     users    = settingMgr.setting['email']
 
+    voter = Voter()
     for email, password in users.items():
-        voter = Voter()
-        voter.loginGoogle(
+        voter.loginPeiHua(
             url=loginURL, 
             email=email, 
             password=password
@@ -21,4 +21,8 @@ if __name__ == '__main__':
         for url in voteURLs:
             voter.vote(url)
 
-        del voter
+        voter.resetBrowser()
+
+
+if __name__ == '__main__':
+    main()
