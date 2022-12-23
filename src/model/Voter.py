@@ -50,7 +50,8 @@ class Voter:
             print(system)
 
             if system.startswith('linux'):
-                browserPath = os.path.normpath('/opt/google/chrome/chrome')
+                #browserPath = os.path.normpath('/opt/google/chrome/chrome')
+                browserPath = 'chromedriver'
             
             elif system.startswith('windows'):
                 browserPath = os.path.normpath('C:\Program Files\Google\Chrome\Application\chrome.exe')
