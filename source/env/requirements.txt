@@ -1,5 +1,0 @@
-undetected_chromedriver
-selenium
-pyyaml
-pyinstaller
-ddddocr

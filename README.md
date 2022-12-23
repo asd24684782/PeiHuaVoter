@@ -1,14 +1,14 @@
 # PeiHuaVoter 全聯佩華投票機器人
 
 ## 設定
-設定檔 `exe/setting/setting.yml`
+設定檔 `src/setting/setting.yml`
 ```
 ---
 url: 
-  login: https://youthdream.phdf.org.tw/socialite/redirect/google/member.login?openExternalBrowser=1
+  login: https://youthdream.phdf.org.tw/member/login
   votes:
-    - https://youthdream.phdf.org.tw/project/show?page=4
-    - https://youthdream.phdf.org.tw/project/show?page=11
+    - https://youthdream.phdf.org.tw/project/show?page=?
+    - https://youthdream.phdf.org.tw/project/show?page=?
 
 email:
   username1: password1
@@ -21,4 +21,4 @@ votes放要投票的頁面
 email下可以放多組帳號密碼 `帳號:密碼`
 
 ## 啟動
-執行`exe/main.exe`
+
