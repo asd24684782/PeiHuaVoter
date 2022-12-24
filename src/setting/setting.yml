@@ -1,9 +1,9 @@
 ---
 url: 
   login: https://youthdream.phdf.org.tw/member/login
+  logout: https://youthdream.phdf.org.tw/member/profile
   votes:
     - https://youthdream.phdf.org.tw/project/show?page=?
     - https://youthdream.phdf.org.tw/project/show?page=?
-
 email:
-  username: password
+    username: password

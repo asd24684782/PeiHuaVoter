@@ -42,10 +42,12 @@ def verifyCode(img):
 
 class Voter:
     def __init__(self):
-        self.resetBrowser()
+        self.driver = uc.Chrome()
+        #self.setBrowser()
 
-    def resetBrowser(self):
+    def setBrowser(self):
         try: 
+            self.driver = uc.Chrome()
             system = platform.platform().lower()
             print(system)
 
@@ -100,6 +102,16 @@ class Voter:
         except Exception as e:
             print(e)
             self.loginPeiHua(url, email, password)
+
+    def logout(self, url):
+        try:
+            self.driver.get(url)
+            time.sleep(1)
+            self.driver.find_element(By.XPATH, '//*[@id="container"]/div/form/div[2]/a').click()
+            time.sleep(1)
+
+        except Exception as e:
+            print(e)
 
     def vote(self, url):
         try:
