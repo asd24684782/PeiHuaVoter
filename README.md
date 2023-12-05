@@ -23,4 +23,6 @@ email下可以放多組帳號密碼 `帳號:密碼`
 ## 啟動
 
 ## 打包
-`pyinstaller --add-data '../env/voterENV/Lib/site-packages/ddddocr/*.onnx;ddddocr' -F .\main.py`
+```
+pyinstaller --add-data '../env/voterENV/Lib/site-packages/ddddocr/*.onnx;ddddocr' -F .\main.py
+```
